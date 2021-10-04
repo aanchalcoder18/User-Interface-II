@@ -1,1 +1,163 @@
 /* Add CSS styling here */
+
+/* header section */
+header{
+    background-color: gainsboro;
+    padding: 2%;
+}
+nav a{
+    display: inline-block;
+    width: 10%;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: darkslategrey;
+}
+
+/* first section */
+.intro-section{
+    display: flex;
+    margin: 0 10%;
+}
+
+.left img{
+    width: 60%;
+    height: 60%;   
+    padding-top: 10%;
+}
+
+.right a{
+    border-radius: 5px;
+    padding: 3.5% 10%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: darkslategrey;
+}
+
+/* top row photos*/
+.top-row{  
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+.top-row-child{
+    display: flex;
+}
+.top-row-child img{
+    width: 60%;
+    height: 60%;   
+    padding-top: 10%;
+}
+
+/* bottow row photos */
+.bottom-row{  
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+.bottom-row-child{
+    display: flex;
+}
+.bottom-row-child img{
+    width: 60%;
+    height: 60%;   
+    padding-top: 10%;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    padding: 3%;
+    background-color: gainsboro;
+}
+
+.footer a{
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: darkslategrey;
+}
+
+/*media styling*/
+
+@media(max-width: 1400px) {
+	nav {
+		width: 50%;
+	}
+	.projects-tab2 {
+		width: 30%;
+		margin-left:2%;
+	}
+	.contact-tab2 {
+		width: 15%;
+	}
+}
+
+@media(max-width: 800px) {
+	nav {
+		width: 80%;
+		align-items: center;
+	}
+	nav a {
+		width: 22%;
+		margin: 2% 0;
+	}
+	.img-container {
+		width: 50%;
+	}
+	.projects-tab2 {
+		width: 50%;
+	}
+	.contact-tab2 {
+		width: 20%;
+	}
+}
+
+@media(max-width: 500px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	h1 {
+		text-align: center;
+	}
+	a {
+		font-size: 2rem;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		width: 35%;
+		align-items: center;
+	}
+	nav a {
+		width: 100%;
+	}
+	.intro-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.intro {
+		display: flex;
+		width: 80%;
+		align-items: center;
+		text-align: center;
+		height: 110vh;
+	}
+	.project {
+		width: 48%;
+		margin: 5% 0;
+	}
+	footer {
+		margin-top: 2%;
+	}
+	address {
+		margin: 2% 0;
+	}
+}
